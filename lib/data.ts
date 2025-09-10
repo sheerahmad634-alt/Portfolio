@@ -9,6 +9,7 @@ import wabapi from "@/public/wabaip.png";
 import ite from "@/public/ite.png";
 import sqoneAcquire from "@/public/sqone acquire.webp";
 import sqoneGrow from "@/public/sqone grow.png";
+import crud from "@/public/CRUD.jpeg";
 
 export const links = [
   {
@@ -135,7 +136,7 @@ export const projectsData = [
       "Tailwind CSS",
       "Redux Toolkit",
     ],
-    // imageUrl: wabapi,
+    imageUrl: crud,
   },
   {
     title: "WaBusinessAPI",
