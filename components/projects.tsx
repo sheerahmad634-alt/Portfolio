@@ -19,6 +19,6 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-    </section>
+    </section> 
   );
 }

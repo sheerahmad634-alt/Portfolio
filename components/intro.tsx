@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import pic from "@/public/Omar.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/image.jpeg"
+              src={pic}
               alt="Ricardo portrait"
               width="192"
               height="192"
@@ -57,17 +58,22 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="font-bold">Hello, I'm Shafqat.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">1 year</span> of experience as a Freelancer.
-        I enjoy building <span className="italic">sites & apps</span>. My focus
-        is <span className="underline">React (Next.js)</span>.
-      </motion.h1>
+<motion.h3
+  className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  <span className="font-bold">Hello, I'm Sheraz Ahmad.</span> I'm a{" "}
+  <span className="font-bold">software engineer</span> with experience
+  leading responsibilities and building scalable web applications from
+  scratch using React, JavaScript, MERN Stack, and Firebase. I specialize
+  in designing clean architectures, deploying end-to-end solutions, and
+  integrating real-time data features for high performance and usability.
+  <br />
+  I have a strong background in frontend development, product
+  quality, and user-centric design.
+</motion.h3>
+
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -91,7 +97,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Shafqat's Resume.pdf"
+          href="https://drive.google.com/file/d/1hDS2eNjWmFhdvgrWeFE--9Op6mUn9Hzt/view?usp=sharing"
           download
         >
           Download CV{" "}
@@ -100,7 +106,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/shafqat-khan-846046224/"
+          href="https://www.linkedin.com/in/sheraz-ahmad-9b1307242"
           target="_blank"
         >
           <BsLinkedin />
@@ -108,7 +114,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Shafqat-Khan"
+          href="https://github.com/sherazahmad634"
           target="_blank"
         >
           <FaGithubSquare />
